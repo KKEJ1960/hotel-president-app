@@ -7,10 +7,34 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
+# Dépendances
+node_modules/
+
+# Variables d'environnement
+.env
+.env.local
+.env.production
+.env.example
+
+# Build
 dist
 dist-ssr
+build/
 *.local
+
+# Uploads
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# Base de données
+*.sql
+!schema.sql
+
+# Fichiers de test
+test-*.js
+backend/test-*.js
+BUGS-*.md
+ETAT-*.md
 
 # Editor directories and files
 .vscode/*
@@ -22,3 +46,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Vite
+.vite/
